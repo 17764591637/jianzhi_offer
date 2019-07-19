@@ -26,8 +26,9 @@ class Solution:
                 return self.match(s, pattern[2:])
         if (len(s) > 0 and (pattern[0] == '.' or pattern[0] == s[0])):
             return self.match(s[1:], pattern[1:])
+
         return False
 
 s = Solution()
-res = s.match('aaa','ab*ac*a')
+res = s.match('afa','ab*ac*a')
 print(res)

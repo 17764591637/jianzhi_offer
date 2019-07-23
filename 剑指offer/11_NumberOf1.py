@@ -5,7 +5,7 @@
 class Solution:
     def NumberOf1(self, n):
         # write code here
-        if n >=0 :
+        if n >= 0 :
             num_bin = bin(n)
             res = num_bin.count('1')
 

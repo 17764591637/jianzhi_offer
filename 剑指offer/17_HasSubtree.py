@@ -18,19 +18,28 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
+#solution 1
+# class Solution:
+#     def HasSubtree(self, pRoot1, pRoot2):
+#         # write code here
+#         if not pRoot2 or not pRoot2:
+#             return False
+#         return self.is_subtree(pRoot1,pRoot2) or self.HasSubtree(pRoot1.left,pRoot2) or self.HasSubtree(pRoot1.right,pRoot2)
+    
+#     def is_subtree(self,A,B):
+#         if not B:
+#             return True
+#         if not A or A.val != B.val:
+#             return False
+        
+#         return self.is_subtree(A.left,B.left) and self.is_subtree(A.right,B.right)
+#solution 2：
 
 class Solution:
     def HasSubtree(self, pRoot1, pRoot2):
-        # write code here
-        if not pRoot2 or not pRoot2:
-            return False
-        return self.is_subtree(pRoot1,pRoot2) or self.HasSubtree(pRoot1.left,pRoot2) or self.HasSubtree(pRoot1.right,pRoot2)
-    
-    def is_subtree(self,A,B):
-        if not B:
-            return True
-        if not A or A.val != B.val:
-            return False
-        
-        return self.is_subtree(A.left,B.left) and self.is_subtree(A.right,B.right)
-        
+        def convert(p):
+            if p:
+                return str(p.val) +  convert(p.left) + convert(p.right)
+            else:
+                return ""
+        return convert(pRoot2) in convert(pRoot1) if pRoot2 else False

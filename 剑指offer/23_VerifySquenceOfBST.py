@@ -27,6 +27,7 @@ class Solution:
         if root_val < min_val:
             return True
         return False
+
         
 s = Solution()
 res = s.VerifySquenceOfBST([4,8,6,12,16,14,10])

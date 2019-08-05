@@ -32,5 +32,5 @@ class Solution:
         return int(dp[k][0])
 
 s = Solution()
-res = s.func(10)
+res = s.func(6)
 print(res)

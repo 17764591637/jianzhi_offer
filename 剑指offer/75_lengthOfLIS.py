@@ -35,6 +35,7 @@ class Solution(object):
             else:
                 return self.binarySearch(a,number,mid,right)
 
+
 solut = Solution()
 print(solut.lengthOfLIS([1,6,2,3,7,5]))
 

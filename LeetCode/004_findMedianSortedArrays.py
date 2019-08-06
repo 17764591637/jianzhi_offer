@@ -12,7 +12,7 @@ nums2 = [3, 4]
 则中位数是 (2 + 3)/2 = 2.5
 '''
 class Solution:
-    def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
+    def findMedianSortedArrays(self, nums1, nums2):
         li = sorted((nums1 + nums2))
         s = len(li)
         if s % 2:

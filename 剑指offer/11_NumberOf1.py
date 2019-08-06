@@ -8,14 +8,12 @@ class Solution:
         if n >= 0 :
             num_bin = bin(n)
             res = num_bin.count('1')
-
-            return res
         else:
             n += 2**32
             num_bin = bin(n)
             res = num_bin.count('1')
 
-            return res
+        return res
 
 s = Solution()
 res = s.NumberOf1(-1)

@@ -10,5 +10,5 @@ class Solution:
 
 
 s = Solution()
-res = s.minNumberInRotateArray('We Are Happy')
+res = s.minNumberInRotateArray([3,4,5,1,2])
 print(res)

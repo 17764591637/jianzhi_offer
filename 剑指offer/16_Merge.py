@@ -20,6 +20,7 @@ class Solution:
                 mergeHead.next = pHead1
                 pHead1 = pHead1.next
             mergeHead = mergeHead.next
+            
         if pHead1:
             mergeHead.next = pHead1
         if pHead2:

@@ -28,7 +28,7 @@ class Solution:
         for j in range(1,k+1):
             for i in range(n):
                 dp[j][i] = dp[j-1][(i-1+n)%n] + dp[j-1][(i+1)%n]
-        print(dp)
+        #print(dp)
         return int(dp[k][0])
 
 s = Solution()

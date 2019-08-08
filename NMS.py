@@ -23,7 +23,7 @@ def py_cpu_nms(dets, thresh):
     areas = (y2-y1+1) * (x2-x1+1)
     scores = dets[:,4]
     
-    #keep用于存放，NMS后剩余的方框
+    #keep用于存放NMS后剩余的方框
     keep = []
     #取出分数从大到小排列的索引。.argsort()是从小到大排列，[::-1]是列表头和尾颠倒一下。
     index = scores.argsort()[::-1]

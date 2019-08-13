@@ -9,6 +9,6 @@ class Solution(object):
         if root1 is None and root2 is None:
             return True
         elif root1 and root2:
-            return root1.val==root2.val and issame(root1.left, root2.left) and issame(root1.right, root2.right)
+            return root1.val==root2.val and self.issame(root1.left, root2.left) and self.issame(root1.right, root2.right)
         else:
             return False

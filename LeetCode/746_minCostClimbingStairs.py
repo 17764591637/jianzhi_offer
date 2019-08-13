@@ -44,4 +44,5 @@ class Solution(object):
                 dp.append(min(dp[i-1],dp[i-2])) 
             else:
                 dp.append(min(dp[i-1]+cost[i],dp[i-2]+cost[i]))
+                
         return dp[-1]

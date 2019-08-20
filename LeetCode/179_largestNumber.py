@@ -21,7 +21,7 @@ class Solution:
                 ba = int(str(b) + str(a))
                 if ba > ab:
                     nums[j],nums[j+1] = nums[j+1],nums[j]
-                print(nums)
+                #print(nums)
             i -= 1
         
         res = ''
@@ -30,11 +30,9 @@ class Solution:
                 continue
             res += str(n)
         if res == '':
-            return 0
+            return '0'
         else:
             return res
-
-        return res
 
 s  = Solution()
 res = s.largestNumber([3,30,34,5,9])

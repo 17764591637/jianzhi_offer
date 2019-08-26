@@ -1,4 +1,5 @@
 '''
+插入排序：
 一般来说，插入排序都采用in-place在数组上实现。
 具体算法描述如下：
 1.从第一个元素开始，该元素可以认为已经被排序；
@@ -16,7 +17,7 @@ def insert_sort(nums):
         for j in range(i,0,-1):
             if nums[j] < nums[j-1]:
                 nums[j], nums[j - 1] = nums[j - 1], nums[j]
-
+        print(nums)
 alist = [54,26,93,17,77,31,44,55,20]
 insert_sort(alist)
 print(alist)

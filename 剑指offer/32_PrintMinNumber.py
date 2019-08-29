@@ -15,9 +15,10 @@ class Solution:
             for i in range(len(numbers)):
                 backtrack(numbers[:i]+numbers[i+1:],tmp+numbers[i])
         backtrack(numbers,'')
+        #print(res)
 
         return min(res)
 
 s = Solution()
-res = s.PrintMinNumber([1,2,3])
+res = s.PrintMinNumber([3,32,321])
 print(res)

@@ -81,7 +81,7 @@ def showCluster(dataSet,k,centroids,clusterAssment):
  
     plt.show()
 dataSet = loadDataSet("test.txt")
-k = 2
+k = 3
 centroids,clusterAssment = KMeans(dataSet,k)
  
 showCluster(dataSet,k,centroids,clusterAssment)

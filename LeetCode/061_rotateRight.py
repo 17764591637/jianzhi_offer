@@ -7,10 +7,6 @@
 解释:
 向右旋转 1 步: 5->1->2->3->4->NULL
 向右旋转 2 步: 4->5->1->2->3->NULL
-
-来源：力扣（LeetCode）
-链接：https://leetcode-cn.com/problems/rotate-list
-著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 '''
 class ListNode:
     def __init__(self, x):
@@ -51,6 +47,7 @@ class Solution:
             end = head
             head = head.next
             len += 1 
+            
         end.next = start
         pos = len - k % len 
         while pos>1:

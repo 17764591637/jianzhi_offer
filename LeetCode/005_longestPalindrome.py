@@ -9,6 +9,8 @@ Example 2:
 Input: "cbbd"
 Output: "bb"
 最长的回文子串。
+
+中心扩散：选取一个中心点向两边扩散并判断是否为回文，并记录所有搜索到的最长回文并返回结果。
 '''
 class Solution(object):
 

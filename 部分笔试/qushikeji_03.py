@@ -3,6 +3,7 @@ import torch.nn as nn
 import numpy as np 
 from torch.autograd import Variable
 
+
 theta1,theta2,bias = map(float,input().split())
 theta = np.array([[theta1,theta2]],dtype=np.float32)
 x_train = np.array([[1.1,6.1],
